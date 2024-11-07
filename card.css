@@ -1,51 +1,100 @@
-body{
-    background-color: #8799FF;
+body {
+  background-color: #8799ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
 }
-.wrapper{
-    background-color: white;
-    width: 420px;
-    height: 378px;
-    border-radius: 16px;
-    padding: 16px;
-    flex-direction: column;
+
+.wrapper {
+  background-color: white;
+  width: 420px;
+  height: 378px;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index:10;
+}
+
+
+.card-image {
+    width: 410px;
+    height: 282px;
+    border-radius: var(--Radius--lg, 12px);
+    background: linear-gradient(
+    180deg,
+    rgba(242, 7, 144, 0.4) -9.58%,
+    rgba(0, 85, 255, 0.4) 126.62%
+  );
     display: flex;
-    gap: 16px;
-    align-self: center;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    overflow: hidden;
+  
+
+  }
+  #poly{
     position: relative;
-    top: 250px;
-    left: 30%;
+    top: 70px;
+    left: 60px;
+   
+  }
+  #logo1{
+    position: relative;
+    top: 115px;
+    left: 70px;
+    z-index: 10;
+ 
+  }
+.stars1{
+    position: relative;
+    top:15px;
+    left:68px;
+    transition: 1 ease;
+}
+.stars2{
+    position: relative;
+    right:100px;
+    bottom: 90px;
+    transition: 4 ease;
+}
+.wrapper:hover{
+    .card-image{
+ background: linear-gradient(180deg, #F20790 -9.58%, #05F 126.62%);
+       
+    }
+    .stars1{
+        transform: translate(200px);
+    }
+    .stars2{
+        transform: translate(-200px);
+    }
+}
+.content {
+    position: relative;
+  padding: 16px 16px 0 3px;
+  z-index: 10;
 }
 .poppins-bold {
-    position: relative;
-    font-size: 24px;
-    font-style: normal;
-    line-height: normal;
-    top: 280px;
-    color: #2A323C;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #2a323c;
+  margin: 0;
+  text-align: left;
 }
+
 .poppins-light {
-    overflow: hidden;
-    white-space: nowarp;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 14px;
-    position: relative;
-    top: 240px;
-    color: rgba(42, 50, 60, 0.64);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.backround{
-    position: relative;
-    bottom: 130px;
-    left: 15px;
-    width: 388px;
-    height: 262px;
-    border-radius: var(--Radius--lg, 12px);
-    background: linear-gradient(180deg, rgba(242, 7, 144, 0.40) -9.58%, rgba(0, 85, 255, 0.40) 126.62%);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: rgba(42, 50, 60, 0.64);
+  text-align: left;
+  margin: 0;
 }
