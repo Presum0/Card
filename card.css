@@ -43,14 +43,21 @@ body {
     position: relative;
     top: 70px;
     left: 60px;
+    /* display: block; */
    
   }
+   #poly2{
+    display:none;
+   }
   #logo1{
     position: relative;
     top: 115px;
     left: 70px;
     z-index: 10;
  
+  }
+  #vector{
+    display: none;
   }
 .stars1{
     position: relative;
@@ -62,19 +69,55 @@ body {
     position: relative;
     right:100px;
     bottom: 90px;
-    transition: 4 ease;
+    
 }
 .wrapper:hover{
     .card-image{
  background: linear-gradient(180deg, #F20790 -9.58%, #05F 126.62%);
        
     }
-    .stars1{
-        transform: translate(200px);
-    }
-    .stars2{
-        transform: translate(-200px);
-    }
+   
+    
+   
+}
+.wrapper:hover .stars1{
+  transform: translate(200px);
+       
+        position: relative;
+        transition: 0.4s ease;
+}
+.wrapper:hover .stars2{
+  transform: translate(-200px);
+        
+        position: relative;
+        transition: 0.4s ease;
+}
+.wrapper:hover #poly2{
+    display:block;
+    position: relative;
+    bottom:180px;
+    z-index: 2;
+    transition: 0.1s ease;
+}
+.wrapper:hover #poly{
+    display:none;
+}
+.wrapper:hover  #logo1{
+  position: relative;
+  /* bottom: 150px; */
+  /* top: 5px; */
+  top:245px;
+  left: 72px;
+  z-index: 10;
+
+}
+.wrapper:hover #vector{
+    display: block;
+    position: relative; 
+    bottom:43px;
+    /* top: 50px; */
+    left: 58px;
+    z-index: 5;
 }
 .content {
     position: relative;
