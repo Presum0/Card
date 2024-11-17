@@ -1,46 +1,36 @@
 <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <path d="M2 18C2 9.16344 9.16344 2 18 2H58C66.8366 2 74 9.16344 74 18V58C74 66.8366 66.8366 74 58 74H18C9.16344 74 2 66.8366 2 58V18Z" fill="white"/>
   
-            <path d="M2 18C2 9.16344 9.16344 2 18 2H58C66.8366 2 74 9.16344 74 18V58C74 66.8366 66.8366 74 58 74H18C9.16344 74 2 66.8366 2 58V18Z" fill="white"/>
-            
-            
-            <path d="M2 18C2 9.16344 9.16344 2 18 2H58C66.8366 2 74 9.16344 74 18V58C74 66.8366 66.8366 74 58 74H18C9.16344 74 2 66.8366 2 58V18Z" 
-                  stroke="url(#smoothFloatingGradient)" stroke-width="2.5"/>
-            
-            
-            <path d="M29.6641 46.3337L46.3307 29.667M46.3307 29.667H29.6641M46.3307 29.667V46.3337" 
-                  stroke="url(#smoothArrowGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          
-            
-            <defs>
-              
-              <linearGradient id="smoothFloatingGradient" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#EC0992">
-                  <animate attributeName="stop-color" values=" #EC0992; #0D77FB; #EC0992" dur="4s" repeatCount="indefinite" />
-                </stop>
-                <stop offset="100%" stop-color="#0D77FB">
-                  <animate attributeName="stop-color" values="#0D77FB; #EC0992; #0D77FB" dur="4s" repeatCount="indefinite" />
-                </stop>
-                
-                <animate attributeName="x1" values="0%; 50%; 100%; 50%; 0%" dur="8s" repeatCount="indefinite" />
-                <animate attributeName="y1" values="0%; 50%; 0%; 100%; 0%" dur="8s" repeatCount="indefinite" />
-                <animate attributeName="x2" values="100%; 50%; 0%; 50%; 100%" dur="8s" repeatCount="indefinite" />
-                <animate attributeName="y2" values="100%; 0%; 100%; 50%; 100%" dur="8s" repeatCount="indefinite" />
-              </linearGradient>
-              
-              
-              <linearGradient id="smoothArrowGradient" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">#EC0992
-                <stop offset="0%" stop-color="#EC0992">
-                  <animate attributeName="stop-color" values="#EC0992; #0D77FB; #EC0992" dur="4s" repeatCount="indefinite" />#EC0992; #0D77FB; #EC0992
-                </stop>
-                <stop offset="100%" stop-color="#0D77FB">
-                  <animate attributeName="stop-color" values="#0D77FB; #EC0992; #0D77FB" dur="4s" repeatCount="indefinite" />
-                </stop>
-                
-                
-                <animate attributeName="x1" values="0%; 50%; 100%; 50%; 0%" dur="8s" repeatCount="indefinite" />
-                <animate attributeName="y1" values="0%; 50%; 0%; 100%; 0%" dur="8s" repeatCount="indefinite" />
-                <animate attributeName="x2" values="100%; 50%; 0%; 50%; 100%" dur="8s" repeatCount="indefinite" />
-                <animate attributeName="y2" values="100%; 0%; 100%; 50%; 100%" dur="8s" repeatCount="indefinite" />
-              </linearGradient>
-            </defs>
-          </svg> 
+    <!-- Animated Gradient Border -->
+    <path d="M2 18C2 9.16344 9.16344 2 18 2H58C66.8366 2 74 9.16344 74 18V58C74 66.8366 66.8366 74 58 74H18C9.16344 74 2 66.8366 2 58V18Z" 
+          stroke="url(#gradientBorder)" stroke-width="2.5"/>
+  
+    <!-- Slightly Smaller Centered Arrow -->
+    <path d="M30.8333 45.1667L45.1667 30.8333M45.1667 30.8333H30.8333M45.1667 30.8333V45.1667" 
+          stroke="url(#gradientArrow)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+    <defs>
+      <!-- Gradient for Border -->
+      <linearGradient id="gradientBorder" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#FF00B5"/> <!-- Bright Pink -->
+        <stop offset="100%" stop-color="#0099FF"/> <!-- Bright Blue -->
+        <animateTransform attributeName="gradientTransform"
+                          type="rotate"
+                          from="0 38 38"
+                          to="360 38 38"
+                          dur="2s" repeatCount="indefinite" />
+      </linearGradient>
+  
+      <!-- Gradient for Arrow -->
+      <linearGradient id="gradientArrow" x1="11.4988" y1="28.4998" x2="29.4988" y2="10.9998" gradientUnits="userSpaceOnUse">
+        <stop offset="0.176395" stop-color="#007AFF"/>
+        <stop offset="1" stop-color="#FF008A"/>
+        <animateTransform attributeName="gradientTransform"
+                          type="rotate"
+                          from="0 38 38"
+                          to="360 38 38"
+                          dur="2.05s" repeatCount="indefinite" />
+      </linearGradient>
+    </defs>
+  </svg>
