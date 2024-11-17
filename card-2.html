@@ -20,8 +20,10 @@
                 <img src="logo.svg" id="logo1"/>
                 <img src="Group-2.svg" alt="" id="group-2">
                 <img src="Vector.svg" alt="" id="vector">
+                <img src="logo-ring-1.svg" alt="" id="logo-ring-1">
+                <img src="logo-ring-2.svg" alt="" id="logo-ring-2">
             </div>
-           <!--<div class="arrow-background"></div>-->
+           <div class="arrow-background"></div>
         </div>
         <div class="text-wrapper">
             <div class="main-heading">Competitive Analysis</div>
@@ -42,18 +44,23 @@
             align-items: center;
         }
         .arrow-background{
+            /*opacity: 0;*/
             background-color: transparent;
-            border-radius: 16px;
             position: absolute;
-            bottom: 70px;
-            right: 67px;
+            bottom:10px;
+            right: 3px;
             align-self: flex-end;
-            height: 25px;
-            width: 25px;
+            align-self: flex-end;
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+            box-shadow: -15px -15px 0 0 #ffffff;
         }
-        .wrapper:hover .arrow-background{
-            background-color: white;
-        }
+        /*.wrapper:hover .arrow-background{
+            background-color: rgb(147, 147, 147);
+            opacity: 1;
+            transition: opacity 0.9s ease;
+        }*/
         #vector{
             position: relative;
             bottom: 39%;
@@ -74,22 +81,36 @@
         }
         #Ellipse-ring-2{
             position: absolute;
-            top: 40%;
+            top: 43%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
         }
         #Ellipse-ring{
             position: absolute; 
-            top: 40%; 
+            top: 43%; 
             left: 50%; 
             transform: translate(-50%, -50%); 
             z-index: 2; 
         }
         #logo1{
             position: absolute;
-            top: 40%;
+            top: 43%;
             left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+        }
+        #logo-ring-1{
+            position: absolute;
+            top: 57.8%;
+            left: 59%;
+            transform: translate(-50%, -50%);
+            z-index: 2; 
+        }
+        #logo-ring-2{
+            position: absolute;
+            top: 57.8%;
+            left: 41%;
             transform: translate(-50%, -50%);
             z-index: 2; 
         }
@@ -127,6 +148,8 @@
             background: linear-gradient(180deg, rgb(255, 186, 247) 0%, rgb(170, 198, 255) 120%);
             border-radius: 12px;
             margin:16px;
+            transition: 0.4s ease;
+            
         }
         .main-frame{
             display: flex;
@@ -135,6 +158,8 @@
             height: 410px;
             border-top-left-radius: 16px;
             border-top-right-radius: 16px;
+            border: 1px solid rgb(212, 212, 212);
+            border-bottom: none;
         }
         .main-heading{
             color: #2A323C;
@@ -169,8 +194,8 @@
             opacity: 0;
             transition: transform 0.3s ease, opacity 0.3s ease; 
             position: absolute;
-            bottom: 0px;
-            right: -5px;
+            bottom: 1px;
+            right: -7px;
             align-self: flex-end;
             height: 90px;
             width: 90px;
@@ -181,6 +206,8 @@
             height: 90px;
             border-bottom-left-radius: 16px;
             border-bottom-right-radius: 16px;
+            border: 1px solid rgb(216, 216, 216);
+            border-top: none;
         }
         .wrapper:hover .text-wrapper{
             width: 80%;
@@ -196,16 +223,18 @@
         }
         .wrapper:hover #star1 {
             position: absolute;
-            left: 72%;
+            left: 70%;
             transition: 0.4s ease;
         }
         .wrapper:hover #star2{
             position: absolute;
-            left: 17%;
+            left: 19%;
             transition: 0.4s ease;
+            transform: scaleX(-1);
         }
         .wrapper:hover .main-background{
             background: linear-gradient(180deg, #F20790 -9.58%, #05F 126.62%);
+            transition: background 0.4s ease;
         }
         .wrapper:hover #vector{
             visibility: visible;
